@@ -1,0 +1,25 @@
+You are playing "Guess the number".
+Your job is to find what is the number.
+
+In GuessTheNumberGame, it will call GuessTheNumber's guessNumber()
+The number is between 1 and 1000;
+For each test case, you have 20 chances to guess the number.
+
+In GuessTheNumberHelper, you can check if the value is the guessing number or not
+by calling isRightValue(int value).
+isRightValue will return 0 if the value is equal to the guessing number.
+isRightValue will return 1 if the value is less than the guessing number.
+isRightValue will return -1 if the value is greater than the guessing number.
+
+Your job is to implement guessNumber function in GuessTheNumber.java to guess
+the number within 20 tries.
+
+logic is the follow:
+the minimumValue is 1, the maximumValue is 1000
+you can find midValue by minumumValue + (maximumValue - minimumValue) / 2
+set result by call isRightValue with midValue;
+  int result = helper.isRightValue(midValue);
+if result is 0, then return midValue;
+if result is 1, then update minimumValue to midValue + 1
+if result is -1, then update maximumValue to midValue - 1
+you loop whole thing until minimumValue is less than or equal to maximumValue
