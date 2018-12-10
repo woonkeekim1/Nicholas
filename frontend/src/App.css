@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App .left-form{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #ff9028;
+}
+
+.App .right-form{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+
+}
+.right-form .main-image{
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/26/21/32/background-2011768_960_720.jpg");
+  position: absolute;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

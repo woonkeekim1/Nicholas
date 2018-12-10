@@ -1,0 +1,156 @@
+.message-form{
+	width: 640px;
+  overflow-y:auto;
+	transform: translate(-50%, -80px);
+	left: 50%;
+	top: 120px;
+	height: calc(100% - 100px - 100px);
+	position: absolute;
+}
+.message-form .message-content{
+	padding: 20px;
+	overflow-y: scroll;
+	max-height: 700px;
+	margin-bottom: 20px;
+}
+
+.message-form .message-content::-webkit-scrollbar{
+	width: 10px;
+}
+
+.message-form .message-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.message-form .message-content .row{
+	clear: both;
+	min-height: 80px;
+}
+
+.message-form .message-content .row-date{
+	clear: both;
+	min-height: 100px;
+}
+
+.message-form .message-content div img,
+.message-form .message-content .row div p.initial
+{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: white;
+	text-align: center;
+	line-height: 30px;
+	padding: 10px;
+}
+
+.message-form .message-content .row div p{
+	display: inline;
+	max-width:440px;
+	padding:10px 15px;
+	background-color: #5bc0de;
+	margin: 0 5px;
+	border-radius: 20px;
+
+}
+
+.message-form .message-content div  img,
+.message-form .message-content div .initial,
+.message-form .message-content div p{
+	float: left;
+}
+
+.message-form .message-content .row div{
+	width: 100%;
+}
+
+.message-form .message-content div .self img,
+.message-form .message-content div .self .initial,
+.message-form .message-content div .self p{
+	float: right;
+}
+
+.message-form .message-content .row .self p{
+	background-color: #5cb85c;
+}
+
+.message-form .message-content div.date{
+	text-align: center;
+}
+
+.message-form .message-content div.date::before {
+	right: 100%;
+	margin-right: 15px;
+}
+
+.message-form .message-content div.date::after {
+	left: 100%;
+	margin-left: 15px;
+
+}
+
+.message-form .message-content div.date::before,
+.message-form .message-content div.date::after{
+	content: "";
+	border-bottom: 1px solid black;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+
+}
+
+.message-form .message-message{
+	padding: 20px;
+
+}
+
+.message-form .message-message textarea{
+	resize:none;
+	width:470px;
+	text-align: left;
+	border: none;
+	height: 50px;
+	outline: none;
+}
+.message-form .message-message textarea:focus{
+	background-color: #eee;
+}
+.message-form .message-message input[type = "button"]{
+	border: none;
+	outline: none;
+	background-color:#428bca;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.message-form .message-message input[type = "button"]:hover{
+	background-color: #327bba;
+}
+.message-form .message-content .row .date{
+	position: relative;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.message-form .message-content .row .date::before,
+.message-form .message-content .row  .date::after{
+	content:'';
+	border-bottom: 1px solid white;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+.message-form .message-content .row .date::before{
+	margin-right: 0px;
+}
+.message-form .message-content .row .date::after{
+	margin-left: 0px;
+}

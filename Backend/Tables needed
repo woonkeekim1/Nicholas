@@ -1,0 +1,43 @@
+Tables needed
+Users, Messages, Users-Messages table
+
+
+Users
+	- id
+	- username
+	- password
+	- profile
+		- name
+		- picture
+
+Chat_rooms
+	- id
+	- Title
+
+chat_room_user
+ 	- id
+ 	- chat_room_id
+ 	- user_id
+
+
+
+Messages (either picture, video or text no combination)
+	- id
+	- picture
+	- video
+	- text
+	- sent_by
+	- created_at
+	- chat_room_id
+
+Message_read
+	- id
+	- message_id
+	- user_id
+
+Features
+	- Upload personal image
+	- send and receive messages
+	- notify others when typing
+	- send picture and video
+	- mark if read

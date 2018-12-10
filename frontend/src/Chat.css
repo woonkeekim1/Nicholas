@@ -1,0 +1,25 @@
+.content-wrapper{
+  position: absolute;
+  width: calc(100% - 350px);
+  height: 100%;
+  background-color: #778899;
+}
+.content-wrapper .chat-title-wrapper{
+  font-size: 20px;
+  border-bottom: 1px solid #aaa;
+  height: 50px;
+  padding: 10px 50px;
+  margin-top: 20px;
+  font-weight: bold;
+
+}
+
+.content-wrapper .chat-title-wrapper .title{
+
+}
+
+.chat-body-wrapper{
+  height: calc(100% - 111px);
+  position: absolute;
+  width: 100%;
+}

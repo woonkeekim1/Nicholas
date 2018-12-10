@@ -1,0 +1,100 @@
+.login-form-wrapper{
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50% );
+	background-color: #fff;
+	box-shadow: #696969 0px 0px 5px 5px;
+}
+.login-form{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50% );
+	padding: 20px;
+	border-radius: 10px;
+	width: 300px;
+}
+
+.login-form .row{
+	width: 100%;
+	position: relative;
+}
+
+.slide-input{
+	position: relative;
+}
+
+.slide-input label {
+	font-family:"Segoe UI";
+	font-size:10px;
+	letter-spacing:8px;
+}
+
+.slide-input input{
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #696969;
+	padding: 18px 0px 5px 0px;
+	font-size: 16px;
+	border-bottom: 1px solid #696969;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+.slide-input label{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color:#696969;
+	padding: 18px 0px 5px 0px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.slide-input input:focus ~ label,
+.slide-input input:valid ~ label{
+	color: #fc7d28;
+	top: -12px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.login-form input[type = "button"]{
+	width: 100%;
+	padding: 15px 5px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	color: white;
+	background-color:#f7741d;
+	cursor: pointer;
+	margin-top: 20px;
+    letter-spacing: 8px;
+    font-family: "Segoe UI";
+}
+
+.login-form input[type = "button"]:hover{
+	background-color:#fc7d28;
+}
+
+.login-form .row-label {
+	text-align: center;
+}
+
+.login-form .row-label button{
+	text-decoration: none;
+	color: #696969;
+	font-size: 12px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.login-form .row-label button:hover{
+	color: #ccc;
+}

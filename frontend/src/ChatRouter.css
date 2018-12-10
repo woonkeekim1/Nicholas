@@ -1,0 +1,122 @@
+body{margin: 0; padding: 0;}
+.chatroom {
+	margin: 0;
+	padding: 0;
+}
+
+.chatroom .content{
+	margin-left: 350px;
+}
+
+.chatroom .left-nav{
+	width: 350px;
+	position: fixed;
+	height: 100%;
+	border-right: 1px solid #eee;
+	overflow-y:scroll;
+	background-color: #ff9028;
+}
+.chatroom .left-nav .name-holder{
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 20px 10px;
+}
+
+
+.chatroom .left-nav::-webkit-scrollbar{
+	width: 10px;
+}
+
+.chatroom .left-nav::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.chatroom .left-nav .chat-room{
+	padding: 10px;
+	box-sizing: border-box;
+	height: 40px;
+	cursor: pointer;
+}
+
+
+.chatroom .left-nav .chat-room:hover{
+	background-color: #f7741d;
+}
+
+
+.chatroom .left-nav .chat-room .avatar{
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	background-color: white;
+	float: left;
+}
+.chatroom .left-nav .chat-room .header-wrapper{
+	width: 250px;
+	float: left;
+	margin-left: 10px;
+}
+.chatroom .left-nav .chat-room .header-wrapper .title{
+	width: 100%;
+}
+
+.chatroom .left-nav .chat-room .header-wrapper .title .room-name{
+	width: 100%;
+	color: #fff;
+	float:left;
+	position: relative;
+}
+
+.chatroom .left-nav .chat-room .header-wrapper .title .last-modified-date{
+	width: calc(100% - 150px);
+	float: left;
+	color: #ccc;
+}
+
+.chatroom .chat-list .chat-room:nth-child(2) {
+	margin-top: 10px;
+}
+
+.chatroom .left-nav .chat-room .header-wrapper .message {
+	width: 100%;
+}
+
+.chatroom .left-nav .chat-room .header-wrapper .message .last-message{
+	width: 100%;
+	margin-top: 16px;
+}
+
+.chatroom .left-nav .channels{
+	font-weight: bold;
+	margin-left: 10px;
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+}
+
+.chatroom .channels .add{
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	padding: 0px 5px;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.chatroom .left-nav .chat-room:last-child{
+	margin-bottom: 20px;
+}
+
+.chatroom .left-nav .chat-room .header-wrapper .title .room-name span{
+	background-color: red;
+	padding: 7px;
+	position: absolute;
+	top: -1px;
+	right: -30px;
+	border-radius: 50%;
+	line-height: 9px;
+}
